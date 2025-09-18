@@ -1,1 +1,25 @@
-#include <iostream>#include <stack>#include <array>using namespace std;int main() {    // Массив    int arr[] = {1, 2, 3, 4, 5};    cout << "Массив: ";    for (int num : arr) cout << num << " ";    cout << endl;        // Стек    stack<int> s;    s.push(10);    s.push(20);    s.push(30);        cout << "Верхний элемент стека: " << s.top() << endl;    cout << "Извлечено: " << s.top() << endl;    s.pop();    cout << "Новый верхний элемент: " << s.top() << endl;        return 0;}
+#include <iostream>
+#include <stack>
+#include <array>
+using namespace std;
+
+int main() {
+    // РњР°СЃСЃРёРІ
+    int arr[] = {1, 2, 3, 4, 5};
+    cout << "РњР°СЃСЃРёРІ: ";
+    for (int num : arr) cout << num << " ";
+    cout << endl;
+    
+    // РЎС‚РµРє
+    stack<int> s;
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    
+    cout << "Р’РµСЂС…РЅРёР№ СЌР»РµРјРµРЅС‚ СЃС‚РµРєР°: " << s.top() << endl;
+    cout << "РР·РІР»РµС‡РµРЅРѕ: " << s.top() << endl;
+    s.pop();
+    cout << "РќРѕРІС‹Р№ РІРµСЂС…РЅРёР№ СЌР»РµРјРµРЅС‚: " << s.top() << endl;
+    
+    return 0;
+}
